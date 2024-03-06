@@ -1,0 +1,47 @@
+.page-content {
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.nav-link {
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* New CSS for animations and dark mode toggle */
+.fade-in {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.dark-mode .navbar-simple, .dark-mode .footer {
+    background-color: #343a40; /* Darker shade for dark mode */
+}
+
+.light-mode .navbar-simple, .light-mode .footer {
+    background-color: #007bff; /* Lighter shade for light mode */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
