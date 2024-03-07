@@ -10,7 +10,7 @@ blob_service_client = BlobServiceClient.from_connection_string(connection_string
 container_name = "containerfrc"
 target_folder = "Users/simon/Desktop/Builds/Dashy/camels/"
 
-# Access the container
+# Access the container 
 container_client = blob_service_client.get_container_client(container_name)
 
 # List all blobs in the container and filter for Excel files
