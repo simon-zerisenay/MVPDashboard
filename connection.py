@@ -1,6 +1,6 @@
 from azure.storage.blob import BlobServiceClient
 import os
-
+ 
 # Replace YOUR_CONNECTION_STRING with your actual Azure Blob Storage connection string
 connection_string = "DefaultEndpointsProtocol=https;AccountName=pistoragefrc1;AccountKey=0JfcY7Sg9tyRMLeaupyQBO3S3UUx8rAJl6jx2WAylYesrQPITUUzDRxKgtdI4b3Qtj68Hgf51oT/+AStb2zSPA==;EndpointSuffix=core.windows.net"
 
