@@ -6,7 +6,7 @@ connection_string = "DefaultEndpointsProtocol=https;AccountName=pistoragefrc1;Ac
 
 
 # Name of the container  
-container_name = "containerfrc"
+container_name = "containerfrc" 
 
 try:
     # Create a blob service client using the connection string
