@@ -9,21 +9,12 @@ container_name = "containerfrc"
 
 try:
     blob_service_client = BlobServiceClient.from_connection_string(connection_string)
-    
-    # Access the specified container within the Blob service
     container_client = blob_service_client.get_container_client(container_name)
-    
-    # List all blobs (files) within the container
     print("Listing Excel files in the container:")
     for blob in container_client.list_blobs():
-        # Check if the file is an Excel file by its extension
         if blob.name.endswith('.xlsx') or blob.name.endswith('.xls'):
             print(blob.name)
             
 except Exception as e:
     print(f"An error occurred: {e}")
-
-
-# import ssl
-# print(ssl.OPENSSL_VERSION)
 
