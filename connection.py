@@ -8,7 +8,6 @@ connection_string = "DefaultEndpointsProtocol=https;AccountName=pistoragefrc1;Ac
 container_name = "containerfrc" 
 
 try:
-    # Create a blob service client using the connection string 
     blob_service_client = BlobServiceClient.from_connection_string(connection_string)
     
     # Access the specified container within the Blob service
