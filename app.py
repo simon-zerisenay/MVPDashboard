@@ -1,6 +1,6 @@
 import pandas as pd
 import plotly.express as px  
-    
+     
 # Load the CSV file
 # file_path = '/Users/simon/Desktop/Builds/Dashboard/race_20240103_042233.csv'
 file_path = '/Users/simon/Desktop/Builds/Dashboard/final.csv'
